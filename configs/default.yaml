@@ -1,0 +1,26 @@
+# Zentrale Konfiguration fuer das ML-Kurs-Repo
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+
+random_seed: 42
+
+plot_style:
+  figsize_wide: [14, 7]
+  figsize_square: [10, 10]
+  dpi: 100
+  palette: "Set2"
+  style: "whitegrid"
+
+fake_news:
+  fake_file: "Fake.csv"
+  true_file: "True.csv"
+  test_size: 0.2
+  ngram_range: [1, 2]
+  top_n_words: 15
+
+hotel_bookings:
+  file: "hotel_bookings_processed.csv"
+  target: "reservation_status"
+  test_size: 0.2
+  drop_columns: ["is_canceled", "reservation_status_date"]

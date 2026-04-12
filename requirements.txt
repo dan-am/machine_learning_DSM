@@ -16,14 +16,18 @@ statsmodels>=0.12.0
 notebook>=6.0.0 
 jupyterlab>=3.0.0
 
-# Weitere nützliche Pakete
-ipykernel>=6.0.0 
-tqdm>=4.0.0 
-jsonschema>=3.2.0 
-requests>=2.25.1 
-# subprocess>=0.2.9 
+# Konfiguration
+pyyaml>=6.0
+
+# Deep Learning (optional, nur fuer Notebook 02 Autoencoder)
+# tensorflow>=2.10.0
+
+# Weitere nuetzliche Pakete
+ipykernel>=6.0.0
+tqdm>=4.0.0
+jsonschema>=3.2.0
+requests>=2.25.1
 ollama>=0.0.1
 missingno>=0.4.2
 openpyxl>=3.0.7
-
 wordcloud
