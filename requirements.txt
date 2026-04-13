@@ -9,8 +9,9 @@ seaborn>=0.11.0
 plotly>=5.0.0 
 
 # Machine Learning und Statistik
-scikit-learn>=0.24.0 
-statsmodels>=0.12.0 
+scikit-learn>=0.24.0
+statsmodels>=0.12.0
+imbalanced-learn>=0.10.0
 
 # Jupyter-Umgebung
 notebook>=6.0.0 
