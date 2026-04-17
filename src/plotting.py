@@ -39,7 +39,7 @@ def plot_wordclouds(texts, colormaps, titles, figsize=(15, 6)):
     plt.figure(figsize=figsize)
     for i, (text, cmap, title) in enumerate(zip(texts, colormaps, titles)):
         plt.subplot(1, n, i + 1)
-        wc = WordCloud(background_color="white", max_words=100, colormap=cmap, width=800, height=400).generate(text)
+        wc = WordCloud(background_color="white", max_words=1000, colormap=cmap, width=800, height=400).generate(text)
         plt.imshow(wc, interpolation="bilinear")
         plt.axis("off")
         plt.title(title, fontsize=16)
