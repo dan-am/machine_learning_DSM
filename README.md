@@ -14,7 +14,8 @@ machine_learning_DSM/
 ├── notebooks/
 │   ├── 01_fake_news_supervised.ipynb  # Supervised Learning: Fake News Erkennung
 │   ├── 02_unsupervised_learning.ipynb # Unsupervised Learning: Clustering & Dimensionsreduktion
-│   └── 03_hotel_bookings_supervised.ipynb # Multiclass Supervised ML: Hotelbuchungen
+│   ├── 03_hotel_bookings_supervised.ipynb # Multiclass Supervised ML: Hotelbuchungen
+│   └── 04_fake_news_llm.ipynb         # Fake News mit lokalen Ollama-LLMs + Embeddings
 ├── src/
 │   ├── data_loading.py                # Daten laden, Seed-Management
 │   ├── plotting.py                    # Wiederverwendbare Plot-Funktionen
@@ -50,6 +51,13 @@ pip install -r requirements.txt
 - Clustering-Vergleich: K-Means vs. Agglomerativ vs. DBSCAN
 - Dimensionsreduktion: PCA und t-SNE (Olivetti Faces)
 - Autoencoder fuer Bildkompression (MNIST, TensorFlow/Keras)
+
+### 04 - Fake News mit lokalen LLMs (Ollama)
+- Zero-Shot-Klassifikation mit kleinen Modellen (llama3.2:1b/3b, qwen2.5:3b, phi3:mini, gemma2:2b)
+- Stratifizierte Stichprobe + JSON-erzwungener Output
+- Auswertung: Accuracy, F1, Confusion Matrix, Latenzvergleich
+- Semantische Analyse: Embeddings (nomic-embed-text) + PCA/t-SNE + LogReg-Baseline
+- Voraussetzung: lokal laufender Ollama-Server (`ollama serve`)
 
 ## Konfiguration
 
